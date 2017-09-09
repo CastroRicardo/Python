@@ -42,7 +42,7 @@ Como ambos implementan "Botón" el cliente no sabrá si está en
 Windows o Linux, puesto que trabajará directamente sobre la 
 superclase o interfaz.
 
-# Estructura
+## Estructura
 
 ```
 class Pizza
@@ -61,7 +61,7 @@ class Pizza
     		return pizza;
 	}
 ```
-# Ejemplo:
+## Ejemplo:
 ```
 # Factory/Games.py
 # An example of the Abstract Factory pattern.
