@@ -1,22 +1,22 @@
-"""Prototype Pattern
-Especifica los tipos de objetos a crear por medio de una instancia
-prototípica, y crea nuevos objetos copiando dicho prototipo. 
-Este programa es de software libre puede reedistribuirse  y/o modificarse
-bajo los terminos de de GNU
-"""
+#Prototype Pattern
+#Especifica los tipos de objetos a crear por medio de una instancia
+#prototípica, y crea nuevos objetos copiando dicho prototipo. 
+#Este programa es de software libre puede reedistribuirse  y/o modificarse
+#bajo los terminos de de GNU
+
 import copy
 
 class Prototype:
 
-    """ Object, that can be cloned.
-    This is just a base class, so the clone() method
-    is not implemented. But all subclasses have to
-    override it.
-    Objeto que puede ser clonado
-    Esta solo es una clase base, asi que el metodo clone()
-    No esta implementado. Pero todas las subclases deben de
-    anularlo
-    """
+    #Object, that can be cloned.
+    #This is just a base class, so the clone() method
+    #is not implemented. But all subclasses have to
+    #override it.
+    #Objeto que puede ser clonado
+    #Esta solo es una clase base, asi que el metodo clone()
+    #No esta implementado. Pero todas las subclases deben de
+    #anularlo
+    
 
     _type  = None
     _value = None
@@ -32,14 +32,14 @@ class Prototype:
 
 class Type1(Prototype):
 
-    """ Concrete prototype.
+    #Concrete prototype.
     
-    Implementation of Prototype. Important part is the
-    clone() method.
-       Prototipo concreto
-    Implementacion del prototipo. La parte importante
-    es el metodo clone()
-    """
+    #Implementation of Prototype. Important part is the
+    #clone() method.
+    #   Prototipo concreto
+    #Implementacion del prototipo. La parte importante
+    #es el metodo clone()
+    
 
     def __init__(self, number):
         self._type = "Type1"
@@ -60,15 +60,15 @@ class Type2(Prototype):
 
 class ObjectFactory:
 
-    """ Manages prototypes.
-    Static factory, that encapsulates prototype
-    initialization and then allows instatiation
-    of the classes from these prototypes.
-       Gestiona el prototipo.
-    Static factory, que encapsula la inicializacion
-    del prototipo y luego permite instancias de la
-    clase de estos prototipos.
-    """
+    #Manages prototypes.
+    #Static factory, that encapsulates prototype
+    #initialization and then allows instatiation
+    #of the classes from these prototypes.
+    #   Gestiona el prototipo.
+    #Static factory, que encapsula la inicializacion
+    #del prototipo y luego permite instancias de la
+    #clase de estos prototipos.
+    
 
     __type1Value1 = None
     __type1Value2 = None
