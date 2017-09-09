@@ -5,7 +5,7 @@ En diseño de software, el patrón de diseño Factory Method consiste en utiliza
 Las clases principales en este patrón son el creador y el producto. El creador necesita crear instancias de productos, pero el tipo concreto de producto no debe ser forzado en las subclases del creador, porque las posibles subclases del creador deben poder especificar subclases del producto para utilizar.
 
 ## Ejemplo
-
+```
 abstract class Creator{
     // Definimos método abstracto
     public abstract Product factoryMethod();
@@ -34,3 +34,4 @@ public static void main(String args[]){
     Product producto = aCreator.factoryMethod();
     producto.operacion();
 }
+```
